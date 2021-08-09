@@ -1,0 +1,294 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root {
+    --blue:#f2f6fc;
+  }
+
+  .buy-button{
+      color:white;
+      background-color: blue;
+      height:40px;
+      width:100px;
+      border-radius:5px;
+
+  }
+  nav{
+      margin-top:50px;
+  }
+.profile{
+   width:50vw; 
+   padding-top:100px;
+}
+.nav-flex{
+    display:flex;
+    flex-direction: row;
+    padding-left: 0px;
+}
+.nav-flex h6{
+    color:blue;
+    
+}
+.button{
+    height:40px;
+    width:40px;
+    background-color: white;
+    color:rgb(49, 49, 49);
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+}
+.nav-flex ul  {
+    list-style-type: none;
+}
+.nav-left-bar{
+    background-color: rgb(58, 58, 248);
+ width:250px;
+    justify-content: center;
+    color:white; 
+    text-align: center;
+}
+.nav-left-bar p{
+    margin-top:150px;
+    color: white;
+}
+.doc-nav-item{
+    display:flex;
+    margin-bottom: 10px;
+}
+.doc-nav-item i{
+    color:rgb(52, 52, 230);
+}
+.doc-item-icon{
+    display: inline;
+   height:40px;
+   text-align: center;
+  padding-top: 12px;
+   width:40px;
+   border-radius: 50%;
+    background-color: rgb(115, 157, 247);
+}
+.inner-text{
+margin-left:12px;
+}
+.upper-circle{
+    height:100px;
+    width:100%;
+    left:0;
+   margin-bottom:40px;
+    border-radius: 0 0 150% 150%;
+    background-color: white;
+ 
+}
+
+/* profile section */
+
+.pphoto{
+    height:200px;
+}
+.pphoto img{
+    height:100%;
+}
+p{
+    font-size: 1rem;
+    color: rgb(146, 146, 146);
+}
+.service p{
+    font-size: 1.1rem;
+}
+
+h4{
+    font-weight: 400;
+}
+
+
+/* service section */
+.services{
+      padding:0;
+       background-color: var(--blue);
+       width:100%;
+       height:100%;
+       position:relative; 
+   }
+   .service-content{  display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:50px;
+
+   }
+  .services::after{
+    background-color:var(--blue);
+    position:absolute;
+ width:100%;
+    left:0;
+   bottom:-50px;
+ height:50px;
+     content:'';
+    border-radius:0 0 50% 50%/0 0 120% 120%;
+   
+   } 
+  
+
+
+
+.service-icon{
+    border-radius:50%;
+    height:80px;
+    width:80px;
+    color:rgba(255, 255, 255, 0.9)
+}
+/* GALLERY SECTION */
+.gallery{
+    margin-top:100px;
+}
+.column1 img{
+    border-radius:10px;
+}
+.flexx{
+    display:flex;
+    justify-content: space-between;
+   
+}
+
+.image1 img,.image2 img,.image3 img{
+    height:100%;
+    width:100%;
+}
+.image1 {
+    height:250px;
+}
+
+.image2{
+    height:350px;
+}
+.image3{
+    height:450px;
+}
+
+.gallery{
+    margin-top:30px;
+}
+.gallery-item{
+    position:relative;
+}
+
+.overlay{
+    height:100%;
+    width:100%;
+    background-color: rgb(46, 46, 235);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    opacity:0;
+    transition:0.5s ease;
+    border-radius: 5px;
+
+}
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.gallery-item:hover .overlay{
+    opacity:1;
+}
+/* contact */
+.contact{
+    background-color:  var(--blue);
+    position:relative;
+}
+
+.contact-icon{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    background-color: teal;
+}
+.block{
+    display: inline-block;
+    background-color: white;
+    height:150px;
+    color: white;
+    font-weight: lighter;
+    width:300px;
+    margin:20px;
+    border-radius: 5px;
+    box-shadow: 10px;
+}
+.icons{
+    color:rgb(163,169,170);
+    margin-top: 0;
+   
+}
+.icons i{
+    margin:2px 2px;
+}
+.footer-main{
+    background-color: rgb(33,40,50);
+    margin-top:50px;
+ 
+    
+}
+.footer{
+    padding:0;
+       background-color: rgb(33,40,50);
+       width:100%;
+       height:100%;
+       position:relative; 
+}
+.footer-upper-circle{
+    background-color:var(--blue);
+    height:80px;
+    width:100%;
+  position:relative;
+    border-radius: 0 0 150% 150%;
+    z-index: 1000;
+}
+
+.footer h6{
+    color:rgb(163,169,170);
+}
+.footer a{
+    text-decoration: none;
+    color:rgb(163,169,170);
+    font-size: 15px;  
+}
+
+.footer a li{
+    margin:8px 0px;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer h5{
+    color:rgb(163,169,170);
+    font-weight: bold;
+}
+
+.copyright p{
+    font-size: 14px;
+}
+
+/* media queries */
+@media only screen and (max-width:750px)
+{
+    .nav-left-bar{
+        display:none;
+    }
+}
+@media only screen and (max-width:320px)
+{ .block{
+    width:200px;
+}
+   
+}
