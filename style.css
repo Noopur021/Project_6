@@ -44,9 +44,10 @@ a{
 .nav-flex ul  {
     list-style-type: none;
 }
+/* landing */
 .nav-left-bar{
     background-color: rgb(58, 58, 248);
- width:250px;
+ width:200px;
     justify-content: center;
     color:white; 
     text-align: center;
